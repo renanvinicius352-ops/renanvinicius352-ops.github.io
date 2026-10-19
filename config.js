@@ -8,7 +8,7 @@ window.PORTFOLIO_CONFIG = {
   role: "Desenvolvedor Web em formação",
   availability: "Disponível para novos projetos",
   // Coloque o caminho de uma foto sua em assets, por exemplo: "assets/renan.jpg".
-  profileImage: "",
+  profileImage: "assets/logo-rv.svg",
   // Link completo do seu perfil, por exemplo: https://renan_vinicius.dev.com/seuusuario
   instagramUrl: "https://www.instagram.com/renan_vinicius.dev/",
   // Somente números com código do país e DDD. Exemplo de formato: 5511934723835
