@@ -34,7 +34,7 @@ window.PORTFOLIO_CONFIG = {
       category: "Site para o segmento pet",
       description: "Projeto demonstrativo de identidade visual e apresentação digital para um negócio do segmento pet.",
       technologies: ["Tecnologias a confirmar"],
-      url: "",
+      url: "https://renanvinicius352-ops.github.io/aura-pet/",
       image: "",
       imageLabel: "Ilustração abstrata — não é captura do site",
       detail: "Projeto demonstrativo do segmento pet. Revise a descrição e preencha tecnologias e endereço após conferir a versão final do projeto."
