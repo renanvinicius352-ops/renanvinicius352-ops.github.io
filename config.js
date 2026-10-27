@@ -5,13 +5,13 @@
  */
 window.PORTFOLIO_CONFIG = {
   name: "Renan Vinícius",
-  role: "Desenvolvedor Web em formação",
+  role: "Desenvolvedor web",
   availability: "Disponível para novos projetos",
   // Coloque o caminho de uma foto sua em assets, por exemplo: "assets/renan.jpg".
   profileImage: "assets/logo-rv.svg",
-  // Link completo do seu perfil, por exemplo: https://renan_vinicius.dev.com/seuusuario
+  // Link completo do seu perfil, por exemplo: https://instagram.com/seuusuario
   instagramUrl: "https://www.instagram.com/renan_vinicius.dev/",
-  // Somente números com código do país e DDD. Exemplo de formato: 5511934723835
+  // Somente números com código do país e DDD. Exemplo de formato: 5511999999999
   whatsappNumber: "5511934723835",
   whatsappMessage: "Olá, Renan! Conheci seu portfólio pelo Instagram e gostaria de conversar sobre a criação de um site para meu negócio.",
   // URL pública da imagem Open Graph (opcional), por exemplo: https://seusite.com/assets/compartilhar.jpg
@@ -23,7 +23,7 @@ window.PORTFOLIO_CONFIG = {
       category: "Site para pet shop",
       description: "Projeto de demonstração de um site para apresentar produtos, serviços e facilitar o contato e as solicitações de agendamento.",
       technologies: ["HTML", "CSS", "JavaScript", "Supabase", "Cloudflare Turnstile"],
-      url: "https://renanvinicius352-ops.github.io/pets-cia/",
+      url: "",
       image: "",
       imageLabel: "Ilustração abstrata — não é captura do site",
       detail: "Projeto demonstrativo com catálogo de produtos, carrinho e formulário de agendamento. Configure o link publicado em url quando quiser disponibilizá-lo."
@@ -34,21 +34,21 @@ window.PORTFOLIO_CONFIG = {
       category: "Site para o segmento pet",
       description: "Projeto demonstrativo de identidade visual e apresentação digital para um negócio do segmento pet.",
       technologies: ["Tecnologias a confirmar"],
-      url: "https://renanvinicius352-ops.github.io/aura-pet/",
+      url: "",
       image: "",
       imageLabel: "Ilustração abstrata — não é captura do site",
       detail: "Projeto demonstrativo do segmento pet. Revise a descrição e preencha tecnologias e endereço após conferir a versão final do projeto."
     },
-   {
-     id: "oficina-47",
-     name: "OFICINA 47",
-     category: "Site demonstrativo para barbearia",
-     description: "Site demonstrativo responsivo para apresentar uma barbearia, seus serviços e uma forma de solicitar horários pelo WhatsApp.",
-     technologies: ["HTML", "CSS", "JavaScript"],
-     url: "https://renanvinicius352-ops.github.io/site-barbearia-premium/",
-     image: "",
-     imageLabel: "Ilustração abstrata — não é captura do site",
-     detail: "Projeto demonstrativo feito com HTML, CSS e JavaScript puro. Inclui serviços configuráveis, galeria de referências e formulário que prepara um pedido de horário para enviar pelo WhatsApp. Não possui backend nem confirmação automática."
-}
+    {
+      id: "oficina-47",
+      name: "OFICINA 47",
+      category: "Site demonstrativo para barbearia",
+      description: "Site responsivo para apresentar uma barbearia, seus serviços e facilitar pedidos de horário pelo WhatsApp.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      url: "https://renanvinicius352-ops.github.io/site-barbearia-premium/",
+      image: "",
+      imageLabel: "Ilustração abstrata — não é captura do site",
+      detail: "Projeto demonstrativo para barbearia, com apresentação de serviços e formulário que prepara uma solicitação de horário para enviar pelo WhatsApp."
+    }
   ]
 };
