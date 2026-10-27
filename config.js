@@ -23,7 +23,7 @@ window.PORTFOLIO_CONFIG = {
       category: "Site para pet shop",
       description: "Projeto de demonstração de um site para apresentar produtos, serviços e facilitar o contato e as solicitações de agendamento.",
       technologies: ["HTML", "CSS", "JavaScript", "Supabase", "Cloudflare Turnstile"],
-      url: "",
+      url: "https://renanvinicius352-ops.github.io/pets-cia/",
       image: "",
       imageLabel: "Ilustração abstrata — não é captura do site",
       detail: "Projeto demonstrativo com catálogo de produtos, carrinho e formulário de agendamento. Configure o link publicado em url quando quiser disponibilizá-lo."
