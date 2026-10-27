@@ -14,7 +14,7 @@
   document.title = `${config.name} | Portfólio`;
   document.getElementById("availabilityText").textContent = config.availability;
   document.getElementById("currentYear").textContent = String(new Date().getFullYear());
-  setMeta('meta[property="og:title"]', "content", `${config.name} | Desenvolvedor Web em formação`);
+  setMeta('meta[property="og:title"]', "content", `${config.name} | Desenvolvedor Web`);
   setMeta('meta[property="og:image"]', "content", config.shareImage);
 
   const profileVisual = document.getElementById("profileVisual");
@@ -35,6 +35,7 @@
   setupContactLinks();
   setupReveal();
   setupInteractions();
+  setupLogoMotion();
 
   function setMeta(selector, attribute, value) {
     const element = document.querySelector(selector);
@@ -218,6 +219,39 @@
         link.classList.add("is-clicked");
         window.setTimeout(() => link.classList.remove("is-clicked"), 450);
       });
+    });
+  }
+
+  function setupLogoMotion() {
+    const frame = document.querySelector(".profile-frame");
+    const orbitOne = document.querySelector(".orbit-one");
+    const orbitTwo = document.querySelector(".orbit-two");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mouseAvailable = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+    // O efeito usa apenas ponteiro de mouse; em celular e com movimento reduzido, fica parado.
+    if (!frame || reducedMotion.matches || !mouseAvailable.matches) return;
+
+    frame.addEventListener("pointermove", (event) => {
+      const bounds = frame.getBoundingClientRect();
+      const x = Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width - 0.5) * 2));
+      const y = Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height - 0.5) * 2));
+      frame.style.setProperty("--shine-x", `${((x + 1) / 2) * 100}%`);
+      frame.style.setProperty("--shine-y", `${((y + 1) / 2) * 100}%`);
+      frame.style.transform = `perspective(700px) rotateX(${-y * 3}deg) rotateY(${x * 3}deg) scale(1.025)`;
+      frame.classList.add("is-hovering");
+
+      if (orbitOne) orbitOne.style.transform = `translate(${x * 5}px, ${y * 4}px) rotate(-25deg) scaleY(.35)`;
+      if (orbitTwo) orbitTwo.style.transform = `translate(${-x * 5}px, ${-y * 4}px) rotate(32deg) scaleY(.32)`;
+    });
+
+    frame.addEventListener("pointerleave", () => {
+      frame.style.transform = "";
+      frame.style.removeProperty("--shine-x");
+      frame.style.removeProperty("--shine-y");
+      frame.classList.remove("is-hovering");
+      if (orbitOne) orbitOne.style.transform = "";
+      if (orbitTwo) orbitTwo.style.transform = "";
     });
   }
 
